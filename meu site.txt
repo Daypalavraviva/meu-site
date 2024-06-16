@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #2e7d32;
+        }
+        header p {
+            margin: 5px 0 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #2e7d32;
+        }
+        .about img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+        .about, .services, .contact {
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #e0e0e0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site Pessoal</h1>
+        <p>Resumo breve sobre quem eu sou e o que eu faço</p>
+    </header>
+    <nav>
+        <a href="#about">Sobre Mim</a>
+        <a href="#services">Serviços</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section about">
+            <h2>Sobre Mim</h2>
+            <img src="foto.jpg" alt="Foto Profissional">
+            <p>Bem-vindo ao meu site! Eu sou [Seu Nome], dedicado a oferecer produtos cristãos que inspiram paz e espiritualidade. Minha missão é proporcionar aos meus clientes produtos de alta qualidade que ajudem a fortalecer sua fé e espiritualidade.</p>
+            <p><strong>Valores:</strong> Integridade, Fé, Amor ao próximo, Qualidade.</p>
+        </section>
+        <section id="services" class="section services">
+            <h2>Serviços</h2>
+            <p>Ofereço uma variedade de produtos cristãos, incluindo:</p>
+            <ul>
+                <li>Bíblias e Livros religiosos</li>
+                <li>Artigos de decoração cristã</li>
+                <li>Presentes e lembranças cristãs</li>
+                <li>Roupas e acessórios com temas cristãos</li>
+            </ul>
+        </section>
+        <section id="gallery" class="section gallery">
+            <h2>Galeria</h2>
+            <img src="produto1.jpg" alt="Produto 1">
+            <img src="produto2.jpg" alt="Produto 2">
+            <img src="produto3.jpg" alt="Produto 3">
+            <img src="produto4.jpg" alt="Produto 4">
+        </section>
+        <section id="contact" class="section contact">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo por e-mail: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+            <p>Siga-me nas redes sociais:</p>
+            <p>
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Meu Site Pessoal. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
